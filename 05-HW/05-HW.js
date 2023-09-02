@@ -7,7 +7,6 @@ function isValidDate(dateString) {
     const year = parseInt(dateParts[0], 10);
     const month = parseInt(dateParts[1], 10);
     const day = parseInt(dateParts[2], 10);
-
     const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     if (month < 1 || month > 12 || day < 1 || day > daysInMonth[month - 1]) {
@@ -36,7 +35,5 @@ function getDaysDifference(dateFirst, dateSecond) {
 
     return dayDiff;
 }
-
-getDaysDifference('2004-02-30', '2005-05-22');
 
 module.exports = { getDaysDifference, isValidDate };

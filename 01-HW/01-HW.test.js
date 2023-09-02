@@ -11,7 +11,7 @@ describe('Sum function:', () => {
       
     })    
 
-    test('Function should send an error if value is false', () => {
+    test('Function should send an error if values are false', () => {
         expect(() => sum('5', 5)).toThrow('')
         expect(() => sum(5, '5')).toThrow('')
     })
@@ -24,7 +24,7 @@ describe('Subtract function:', () => {
         expect(subtract(0,3)).toBe(-3);
         
     })
-    test('Function should send an error if value is incorrect', () => {
+    test('Function should send an error if values are incorrect', () => {
         expect(() => sum('5', 5)).toThrow('')
         expect(() => sum(5, '5')).toThrow('')
     })
@@ -38,7 +38,7 @@ describe('Multiply function:', () => {
        
     })
 
-    test('Function should send an error if value is false', () => {
+    test('Function should send an error if values are false', () => {
         expect(() => sum('5', 5)).toThrow('')
         expect(() => sum(5, '5')).toThrow('')
     })
@@ -52,7 +52,7 @@ describe('Divide function:', () => {
        
     })
 
-    test('Function should send an error if value is false', () => {
+    test('Function should send an error if values are false', () => {
         expect(() => sum('5', 5)).toThrow('')
         expect(() => sum(5, '5')).toThrow('')
         expect(() => divide(10, 0)).toThrow("");  
